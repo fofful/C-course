@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    for (int luku = 0; luku <= 100; luku++){
+    int luku;
+    for (luku = 1; luku <= 100; luku++){
         if (luku % 2 == 0){
             continue;
         }
@@ -12,7 +13,14 @@ int main(){
             continue;
         }
         else{
-            printf("%d ", luku);
+            if (luku != 97){
+                printf("%d ", luku);
+            }
+            else{
+                printf("%d", luku);
+            }
         }
     }
+    printf("\n");
+    return 0;
 }
