@@ -7,11 +7,13 @@ int main(int argc, char** argv){
     int end;
     start = atoi(argv[1]);
     end = atoi(argv[2]);
-
+    int first;
+    first = 0;
     for (start = start; start <= end; start++){
         int i;
         int found;
         found = 0;
+        
         for(i = 3; i < argc; i++){
             int divider;
             divider = atoi(argv[i]);
@@ -20,7 +22,13 @@ int main(int argc, char** argv){
             }
         }
         if(found == 0){
-            printf("%d ", start);
+            if(first == 0){
+                printf("%d", start);
+                first = 1;
+            }
+            else{
+                printf(" %d", start);
+            }
         }
     }
     return 0;
