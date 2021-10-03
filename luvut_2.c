@@ -5,15 +5,15 @@
 int main(int argc, char** argv){
     int start;
     int end;
+    int first;
     start = atoi(argv[1]);
     end = atoi(argv[2]);
-    int first;
     first = 0;
     for (start = start; start <= end; start++){
         int i;
         int found;
         found = 0;
-        
+
         for(i = 3; i < argc; i++){
             int divider;
             divider = atoi(argv[i]);
@@ -30,6 +30,9 @@ int main(int argc, char** argv){
                 printf(" %d", start);
             }
         }
+    }
+    if (first == 1){
+        printf("\n");
     }
     return 0;
 }
