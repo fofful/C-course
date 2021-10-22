@@ -41,8 +41,8 @@ int main(int argc, char* argv[]){
     printf("%d oikein: ", corrects);
     for(i = 0; i < 7; i++){
         for(j = 0; j < 7; j++){
-            if (correctRow[i] == guessedRow[j]){
-                printf("%d", guessedRow[j]);
+            if (correctRow[j] == guessedRow[i]){
+                printf("%d", correctRow[j]);
                 if (i == 6){
                     printf("\n");
                 }
