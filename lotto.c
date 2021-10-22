@@ -43,7 +43,7 @@ int main(int argc, char* argv[]){
         for(j = 0; j < 7; j++){
             if (correctRow[i] == guessedRow[j]){
                 printf("%d", guessedRow[j]);
-                if (i == 7){
+                if (i == 6){
                     printf("\n");
                 }
                 else{
